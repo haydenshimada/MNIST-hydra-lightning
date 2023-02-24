@@ -1,0 +1,14 @@
+defaults:
+  - files: mnist
+  - _self_
+  - data.yaml
+
+params:
+  lr: 1e-3
+  batch_size: 64
+  n_epoch: 5
+  num_workers: 2
+  seed: 42
+
+paths:
+  data: ${hydra:runtime.cwd}/data
